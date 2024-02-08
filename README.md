@@ -30,7 +30,7 @@ Before running this project, you need to have Node.js and npm installed on your 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/airbnb-clone-nextjs.git
+   https://github.com/listerys/Airbnb-Clone.git
 Navigate to the project directory:
 
 bash
