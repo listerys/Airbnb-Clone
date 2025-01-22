@@ -1,53 +1,68 @@
-# Airbnb Clone Next.js Project
+# My Airbnb Clone (Enhanced UI/UX + Simple Dropdown Search)
 
-## Description
+This is an **Airbnb-like application** built with Next.js, Tailwind CSS, 
+and a local JSON server for sample data. It features a **simple, on-page 
+search bar dropdown** that expands to show filters (location, date, price, 
+amenities) **without** navigating to a separate page or calling external APIs.
 
-This project is a clone of Airbnb, built using Next.js, React, and other modern web technologies. It aims to replicate some of the core features of Airbnb, such as listing properties, searching for accommodations, and user authentication.
+## Key Features
 
-## Features
-
-- User authentication (login/signup)
-- Property listing
-- Search functionality with filters
-- Booking system
-- Responsive design
-
-## Technologies Used
-
-- Next.js
-- React
-- Tailwind CSS for styling
-- Firebase for authentication and database
-- Mapbox for maps
+- **Sticky Header** with a minimal Airbnb-like logo and refined styling.
+- **Dropdown Search Bar** that expands inline to reveal multiple filters.
+- **Hero Section** with an eye-catching background image & gradient overlay.
+- **Consistent, Modern Design**: improved spacing, typography, and transitions.
+- **Dark Mode** with consistent color usage.
+- **JSON Server** for local data at `http://localhost:5000`.
+- Optional **Storybook** and **Jest** for testing.
 
 ## Getting Started
 
-### Prerequisites
-
-Before running this project, you need to have Node.js and npm installed on your system.
-
-### Installation
-
-1. Clone the repository:
+1. **Install dependencies**:
    ```bash
-   https://github.com/listerys/Airbnb-Clone.git
-Navigate to the project directory:
+   npm install
+   # or
+   yarn install
+   ```
+2. **Run the development server**:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+   Visit [http://localhost:3000](http://localhost:3000).
 
-bash
-Copy code
-cd airbnb-clone-nextjs
-Install dependencies:
+3. **Run JSON Server**:
+   ```bash
+   npm run server
+   # or
+   yarn server
+   ```
+   Visit [http://localhost:5000](http://localhost:5000).
 
-bash
-Copy code
-npm install
-Set up your environment variables:
+4. **Testing**:
+   ```bash
+   npm run test
+   ```
+5. **Storybook**:
+   ```bash
+   npm run storybook
+   ```
+   Visit [http://localhost:6006](http://localhost:6006).
 
-Rename .env.local.example to .env.local and update the variables to match your configuration.
+## Environment Variables
+Create a `.env.local` (optional for map/payment):
+```
+MAPBOX_API_KEY=YOUR_MAPBOX_API_KEY
+RAZORPAY_KEY_ID=YOUR_RAZORPAY_KEY_ID
+RAZORPAY_KEY_SECRET=YOUR_RAZORPAY_KEY_SECRET
+JWT_SECRET=MY_SUPER_SECRET
+```
 
-Start the development server:
+## Notes
+- For demonstration, data is fetched from `localhost:5000` using JSON Server.
+- If you want to integrate with a real external API, you can replace 
+  local endpoints accordingly.
+- The **search bar** is purely UI-based; 
+  "Apply Filters" closes the dropdown without filtering.
 
-bash
-Copy code
-npm run dev
-Your app should now be running on http://localhost:3000.
+**Enjoy your new and improved, fully responsive Airbnb-like clone with an on-page dropdown search!**
